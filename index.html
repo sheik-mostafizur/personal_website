@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- style -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Personal Website | Tailwind css</title>
+  </head>
+  <body class="font-poppins">
+    <header
+      class="bg-[url('/src/images/header_background.jpg')] bg-cover bg-center flex items-center justify-center text-white text-center lg:py-40 py-20"
+    >
+      <div class="leading-10">
+        <h1 class="border-4 border-green-500 py-4 px-8 sm:text-base md:text-5xl uppercase">
+          hello! I'm Sheik Mostafizur
+        </h1>
+        <div class="my-20">
+          <p>Welcome to my website!</p>
+          <p>I'm a front end developer.</p>
+        </div>
+        <span
+          class="border border-white rounded-full w-9 h-9 inline-block cursor-pointer"
+          ><i class="fa-solid fa-arrow-down"></i
+        ></span>
+      </div>
+    </header>
+    <main>
+      <!-- about me start -->
+      <section class="container mx-auto grid grid-cols-1 sm:mt-20 md:grid-cols-2 items-center px-4">
+        <div class="sm:mb-10">
+          <h2 class="border-l-4 border-green-500 pl-4 uppercase mb-5">
+            about me
+          </h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+            veniam veritatis aperiam sunt ad nisi, quis nihil nostrum.
+          </p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          <br />
+          <button
+            type="button"
+            class="inline-block px-6 py-2.5 bg-gray-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-gray-700 hover:shadow-lg focus:bg-gray-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-800 active:shadow-lg transition duration-150 ease-in-out"
+          >
+            <span class="mr-4"><i class="fa-solid fa-download"></i></span>
+            download cv
+          </button>
+        </div>
+        <div>
+          <img src="./src/images/about_me.png" alt="about me img" />
+        </div>
+      </section>
+      <section class="bg-gray-600">
+        <div class="container mx-auto grid md:grid-cols-3 gap-10 px-4">
+          <div class="text-center text-gray-300 sm:py-8 md:py-24">
+            <span class="text-8xl"><i class="fa-solid fa-pen-nib"></i></span>
+            <h2 class="mt-4 mb-8">Brand Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit amet
+              quas ex impedit. Dolores magni culpa nemo commodi maiores
+              accusantium laudantium esse animi provident voluptas.
+            </p>
+          </div>
+          <div class="text-center text-gray-300 sm:py-8 md:py-24">
+            <span class="text-8xl"><i class="fa-solid fa-desktop"></i></span>
+            <h2 class="mt-4 mb-8">Web Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit amet
+              quas ex impedit. Dolores magni culpa nemo commodi maiores
+              accusantium laudantium esse animi provident voluptas.
+            </p>
+          </div>
+          <div class="text-center text-gray-300 sm:py-8 md:py-24">
+            <span class="text-8xl"
+              ><i class="fa-solid fa-mobile-screen-button"></i
+            ></span>
+            <h2 class="mt-4 mb-8">App Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit amet
+              quas ex impedit. Dolores magni culpa nemo commodi maiores
+              accusantium laudantium esse animi provident voluptas.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- about me end -->
+    </main>
+    <footer class="grid grid-cols-1 md:grid-cols-3">
+      <div class="bg-zinc-800 text-white">
+        <div class="w-full md:w-56 ml-auto md:mr-8 py-32 text-center pl-4">
+          <h2
+            class="border-l-4 border-green-500 pl-4 text-4xl sm:w-fit sm:mx-auto uppercase mb-5"
+          >
+            Contact
+          </h2>
+          <div>
+            <p><a href="#">Your Company</a></p>
+            <p><a href="#">00 123 4564 789</a></p>
+            <p><a href="#">Your Location</a></p>
+          </div>
+          <div class="my-4">
+            <a href="#" class="mr-2"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="mr-2"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="mr-2"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-2 flex items-center">
+        <div class="w-10/12 mx-auto sm:my-10">
+          <div class="flex gap-4">
+            <div class="mb-3 xl:w-full">
+              <input
+                type="text"
+                class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border-b border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                id="exampleFormControlInput3"
+                placeholder="Name"
+              />
+            </div>
+            <div class="mb-3 xl:w-full">
+              <input
+                type="text"
+                class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border-b border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                id="exampleFormControlInput3"
+                placeholder="Email"
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border-b border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+              id="exampleFormControlInput3"
+              placeholder="Message"
+            />
+          </div>
+          <button
+            type="button"
+            class="inline-block px-6 py-2.5 bg-gray-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-gray-700 hover:shadow-lg focus:bg-gray-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-800 active:shadow-lg transition duration-150 ease-in-out mt-4"
+          >
+            send
+          </button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
